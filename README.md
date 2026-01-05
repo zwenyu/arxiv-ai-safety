@@ -2,13 +2,13 @@
 
 Curation of arXiv papers related to AI Safety, categorized and summarized by LLM.
 
-## Overview (2025-12-30)
+## Overview (2026-01-01)
 - **Agentic & Long-Horizon Risks**: This week's papers highlight a new framework, ASG-SI, designed to enhance the safety and control of self-improving agentic LLMs. It directly addresses security challenges like reward hacking and behavioral drift by making LLM improvements auditable and governable through verifiable skill graphs with reconstructible rewards.
 - **Alignment**: This week's papers highlight a significant development in improving LLM alignment by addressing inductive biases in reward models. A new method, DIR, utilizes information-theoretic guidance to minimize the influence of biases like response length and sycophancy, thereby enhancing RLHF performance and better aligning LLMs with human values.
 - **Misuse & Security**: This week's papers reveal widespread vulnerabilities to prompt injection and jailbreaking techniques across various AI systems, from LLM-based academic reviewing to web-based agents. Researchers introduced methods like multilingual hidden prompt injection and the multi-strategy EquaCode jailbreak, while also proposing defense frameworks for multimodal prompt injection in complex agentic AI systems and characterizing broader ML security risks.
 
 
-## Latest Papers (2025-12-30)
+## Latest Papers (2026-01-01)
 
 ### Agentic & Long-Horizon Risks
 _This week's papers highlight a new framework, ASG-SI, designed to enhance the safety and control of self-improving agentic LLMs. It directly addresses security challenges like reward hacking and behavioral drift by making LLM improvements auditable and governable through verifiable skill graphs with reconstructible rewards._
@@ -33,6 +33,7 @@ _This week's papers reveal widespread vulnerabilities to prompt injection and ja
 
 | Date | Title | Tags | Summary |
 |---|---|---|---|
+| 2026-01-01 | [Defensive M2S: Training Guardrail Models on Compressed Multi-turn Conversations](http://arxiv.org/abs/2601.00454v1) | LLM | Defensive M2S trains guardrail models on compressed multi-turn conversations, significantly reducing computational costs for safety screening while maintaining high attack detection recall. |
 | 2025-12-30 | [Jailbreaking Attacks vs. Content Safety Filters: How Far Are We in the LLM Safety Arms Race?](http://arxiv.org/abs/2512.24044v1) | LLM | This paper presents the first systematic evaluation of jailbreak attacks across the full LLM deployment pipeline, revealing that safety filters are largely effective in detection but require further refinement to optimize protection and user experience. |
 | 2025-12-29 | [Multilingual Hidden Prompt Injection Attacks on LLM-Based Academic Reviewing](http://arxiv.org/abs/2512.23684v1) | LLM | This paper reveals that LLM-based academic reviewing systems are highly susceptible to document-level hidden prompt injection attacks, leading to substantial changes in review outcomes, with vulnerability varying significantly across different languages. |
 | 2025-12-29 | [Toward Trustworthy Agentic AI: A Multimodal Framework for Preventing Prompt Injection Attacks](http://arxiv.org/abs/2512.23557v1) | LLM, Multimodal, Agents | This paper proposes a Cross-Agent Multimodal Provenance-Aware Defense Framework, utilizing sanitization and validation agents coordinated by a provenance ledger, to effectively prevent multimodal prompt injection attacks in complex agentic AI systems. |
