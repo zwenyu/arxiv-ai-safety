@@ -32,6 +32,7 @@ SAFETY_KEYWORDS = [
     "human oversight",
     "deceptive alignment",
     "deceptive behavior",
+    "deception",
     "goal misgeneralization",
     "mesa-optimization",
     "mesa-optimizers",

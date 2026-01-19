@@ -238,6 +238,11 @@ def main():
                 print(f"Summarizing {cat} ({len(recent_papers)} papers from last week)...")
                 highlight = generate_daily_highlight(cat, recent_papers, model_name=args.model)
                 daily_highlights_map[cat] = highlight
+            else:
+                # User request: "if a particular category does not have papers that week, then do not include a summary"
+                if cat in daily_highlights_map:
+                    print(f"Methodically removing summary for {cat} (no papers this week/fresh start)...")
+                    del daily_highlights_map[cat]
                 
     else:
         print("Not Sunday. Keeping existing summaries.")
