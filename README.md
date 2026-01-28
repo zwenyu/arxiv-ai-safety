@@ -2,18 +2,19 @@
 
 Curation of arXiv papers related to AI Safety, categorized and summarized by LLM.
 
-## Overview (2026-01-20)
+## Overview (2026-01-23)
 - **Agentic & Long-Horizon Risks**: This week's papers highlight a significant shift in the understanding of Agentic AI, specifically concerning Large Language Model (LLM) agents. Research indicates a progression from simpler knowledge recall functions to more sophisticated autonomous entities that can perceive their environment, reason through complex problems, formulate plans, and execute actions. This evolution underscores a growing capability for LLMs to operate as more independent and proactive agents.
 - **Alignment**: This week's papers highlight advancements in aligning Large Language Models (LLMs) through novel fine-tuning and steering techniques. Developments include methods to preserve safety during fine-tuning by addressing safety gradient characteristics, and techniques like YaPO and AntiPaSTO for more controlled and interpretable alignment, even in self-supervised moral reasoning scenarios. Furthermore, research indicates that earlier integration of safety interventions during pretraining yields more robust and steerable models.
 - **Ethics & Human Values**: This week's papers highlight concerns about AI alignment and the ethical implications of human-AI interaction. One paper reviews ethical perspectives on anthropomorphizing LLM-based agents, emphasizing a need for empirical work to guide governance. Another argues that AI alignment failures are structural, arising from models learning a full spectrum of human behaviors, including exploitative ones, rather than conceptual errors.
 - **Evaluation & Benchmarking**: This week's papers address crucial aspects of LLM evaluation by introducing methods for assessing both controlled multi-agent systems and potential output inefficiencies. AEMA offers a verifiable framework for complex, human-oversight-driven agentic LLMs, focusing on auditable, process-aware evaluations rather than just single-response scores. Concurrently, BenchOverflow tackles the practical issue of LLM output length with a new benchmark designed to measure and encourage mitigation of excessive generation, impacting costs and performance.
 - **Governance & Policy**: Updated with 1 new papers.
+- **Interpretability**: Updated with 1 new papers.
 - **Misuse & Security**: Updated with 11 new papers.
 - **Multi-Agent & Societal Dynamics**: Updated with 1 new papers.
 - **Robustness & Generalization**: Updated with 4 new papers.
 
 
-## Latest Papers (2026-01-20)
+## Latest Papers (2026-01-23)
 
 ### Agentic & Long-Horizon Risks
 _This week's papers highlight a significant shift in the understanding of Agentic AI, specifically concerning Large Language Model (LLM) agents. Research indicates a progression from simpler knowledge recall functions to more sophisticated autonomous entities that can perceive their environment, reason through complex problems, formulate plans, and execute actions. This evolution underscores a growing capability for LLMs to operate as more independent and proactive agents._
@@ -30,6 +31,7 @@ _This week's papers highlight advancements in aligning Large Language Models (LL
 
 | Date | Title | Tags | Summary |
 |---|---|---|---|
+| 2026-01-23 | [Beyond Outcome Verification: Verifiable Process Reward Models for Structured Reasoning](http://arxiv.org/abs/2601.17223v1) | LLM, Reinforcement Learning | This paper introduces Verifiable Process Reward Models (VPRMs), which utilize deterministic, rule-based verifiers for intermediate reasoning steps to mitigate reward hacking and improve the logical coherence of model outputs. |
 | 2026-01-15 | [Understanding and Preserving Safety in Fine-Tuned LLMs](http://arxiv.org/abs/2601.10141v1) | LLM | This paper reveals that safety gradients in LLMs reside in a low-rank subspace and are often negatively correlated with utility gradients, leading to the development of Safety-Preserving Fine-tuning (SPF) to mitigate safety degradation during fine-tuning. |
 | 2026-01-13 | [YaPO: Learnable Sparse Activation Steering Vectors for Domain Adaptation](http://arxiv.org/abs/2601.08441v1) | LLM | YaPO introduces a novel method for learning sparse activation steering vectors via Sparse Autoencoders to achieve more disentangled, interpretable, and efficient fine-grained control over Large Language Model behaviors for alignment tasks. |
 | 2026-01-12 | [AntiPaSTO: Self-Supervised Steering of Moral Reasoning](http://arxiv.org/abs/2601.07473v1) |  | AntiPaSTO introduces a self-supervised steering method that leverages contrasting word pairs to guide model representations along an anti-parallel axis, enabling scalable oversight of moral reasoning without requiring preference labels. |
@@ -48,6 +50,7 @@ _This week's papers highlight concerns about AI alignment and the ethical implic
 
 | Date | Title | Tags | Summary |
 |---|---|---|---|
+| 2026-01-22 | [Machine-Assisted Grading of Nationwide School-Leaving Essay Exams with LLMs and Statistical NLP](http://arxiv.org/abs/2601.16314v1) | LLM | This paper demonstrates the viability of LLM-assisted essay grading at a national scale, achieving human-comparable performance while maintaining human oversight and producing personalized feedback. |
 | 2026-01-14 | [A Scoping Review of the Ethical Perspectives on Anthropomorphising Large Language Model-Based Conversational Agents](http://arxiv.org/abs/2601.09869v1) | LLM, Agents | This scoping review maps ethically oriented work on anthropomorphising LLM-based conversational agents, identifying conceptual foundations, ethical challenges and opportunities, and methodological approaches, while highlighting a need for more empirical work linking interaction effects to governance guidance. |
 | 2026-01-13 | [Why AI Alignment Failure Is Structural: Learned Human Interaction Structures and AGI as an Endogenous Evolutionary Shock](http://arxiv.org/abs/2601.08673v1) | LLM | The paper argues that AI alignment failures stem from models learning the full spectrum of human interaction, including exploitative behaviors, rather than a conceptual error, suggesting the risk is structural amplification of human inconsistencies rather than adversarial intent. |
 
@@ -57,6 +60,7 @@ _This week's papers address crucial aspects of LLM evaluation by introducing met
 
 | Date | Title | Tags | Summary |
 |---|---|---|---|
+| 2026-01-22 | [Improving Methodologies for LLM Evaluations Across Global Languages](http://arxiv.org/abs/2601.15706v1) | LLM | This paper presents a multilingual evaluation exercise demonstrating that AI safety behaviors vary across languages, highlighting the need for culturally contextualized evaluations and improved annotation guidelines for robust global AI safety testing. |
 | 2026-01-17 | [AEMA: Verifiable Evaluation Framework for Trustworthy and Controlled Agentic LLM Systems](http://arxiv.org/abs/2601.11903v1) | LLM, Multi-Agent Systems | AEMA is a process-aware and auditable framework designed for verifiable evaluation of multi-step, multi-agent LLM systems under human oversight, offering greater stability and traceability than single-response scoring. |
 | 2026-01-13 | [BenchOverflow: Measuring Overflow in Large Language Models via Plain-Text Prompts](http://arxiv.org/abs/2601.08490v1) | LLM | The paper introduces BenchOverflow, a novel benchmark for measuring and mitigating excessive LLM output length, which has significant implications for cost, latency, and resource consumption. |
 | 2026-01-09 | [Automated QoR improvement in OpenROAD with coding agents](http://arxiv.org/abs/2601.06268v1) | LLM, Agents | This paper introduces AuDoPEDA, a closed-loop LLM framework that autonomously improves EDA code within the OpenROAD system, demonstrating significant performance gains in PPA metrics. |
@@ -75,10 +79,12 @@ _Updated with 1 new papers._
 | 2026-01-09 | [Toward Safe and Responsible AI Agents: A Three-Pillar Model for Transparency, Accountability, and Trustworthiness](http://arxiv.org/abs/2601.06223v1) | Reinforcement Learning, Agents | This paper proposes a Three-Pillar Model for safe AI agents based on transparency, accountability, and trustworthiness, advocating for a staged development approach analogous to autonomous driving to balance automation and human oversight. |
 
 ### Interpretability
+_Updated with 1 new papers._
 
 
 | Date | Title | Tags | Summary |
 |---|---|---|---|
+| 2026-01-22 | [Attributing and Exploiting Safety Vectors through Global Optimization in Large Language Models](http://arxiv.org/abs/2601.15801v1) | LLM | The paper introduces GOSV, a global optimization framework to identify distinct sets of safety-critical attention heads in LLMs and demonstrates how exploiting these identified safety vectors can lead to a novel and effective jailbreak attack. |
 | 2026-01-06 | [When the Coffee Feature Activates on Coffins: An Analysis of Feature Extraction and Steering for Mechanistic Interpretability](http://arxiv.org/abs/2601.03047v1) |  | This paper critically examines the reliability and generalizability of sparse autoencoders for mechanistic interpretability in LLMs, finding significant fragility in feature extraction and steering, which raises concerns for their application in AI safety. |
 
 ### Misuse & Security
@@ -87,6 +93,7 @@ _Updated with 11 new papers._
 
 | Date | Title | Tags | Summary |
 |---|---|---|---|
+| 2026-01-22 | [Beyond Visual Safety: Jailbreaking Multimodal Large Language Models for Harmful Image Generation via Semantic-Agnostic Inputs](http://arxiv.org/abs/2601.15698v1) | LLM, Multimodal, Security | The paper introduces Beyond Visual Safety (BVS), a novel framework that successfully jailbreaks multimodal large language models to generate harmful images by decoupling malicious intent from raw inputs. |
 | 2026-01-19 | [Sockpuppetting: Jailbreaking LLMs Without Optimization Through Output Prefix Injection](http://arxiv.org/abs/2601.13359v1) | LLM | Sockpuppeting is a novel, low-cost method for jailbreaking LLMs by injecting an acceptance sequence into the model's output prefix, achieving high success rates without complex optimization. |
 | 2026-01-19 | [Prompt Injection Mitigation with Agentic AI, Nested Learning, and AI Sustainability via Semantic Caching](http://arxiv.org/abs/2601.13186v1) | LLM, Agents, Security | This paper introduces TIVS-O, an enhanced evaluation framework incorporating semantic caching and an observability score, to mitigate prompt injection vulnerabilities in multi-agent LLM systems while simultaneously improving efficiency and sustainability. |
 | 2026-01-19 | [MirrorGuard: Toward Secure Computer-Use Agents via Simulation-to-Real Reasoning Correction](http://arxiv.org/abs/2601.12822v1) | Agents, Security | MirrorGuard proposes a simulation-based training framework for Computer Use Agents (CUAs) that corrects insecure reasoning chains to mitigate real-world security risks without significantly impacting utility. |
@@ -143,6 +150,8 @@ _Updated with 4 new papers._
 
 | Date | Title | Tags | Summary |
 |---|---|---|---|
+| 2026-01-22 | [From Passive Metric to Active Signal: The Evolving Role of Uncertainty Quantification in Large Language Models](http://arxiv.org/abs/2601.15690v1) | LLM, Reinforcement Learning, Agents | This paper surveys the shift from using uncertainty quantification as a passive metric to an active control signal for enhancing the reliability and trustworthiness of Large Language Models in high-stakes applications. |
+| 2026-01-21 | [CLEANER: Self-Purified Trajectories Boost Agentic Reinforcement Learning](http://arxiv.org/abs/2601.15141v1) | LLM, Reinforcement Learning | CLEANER purifies agentic RL trajectories by adaptively replacing execution failures with self-corrections, improving policy optimization and enabling efficient training. |
 | 2026-01-18 | [Survival is the Only Reward: Sustainable Self-Training Through Environment-Mediated Selection](http://arxiv.org/abs/2601.12310v1) |  | The paper proposes an environment-mediated selection mechanism for self-training that relies solely on differential survival based on environmental persistence, preventing reward hacking and enabling sustainable open-ended self-improvement. |
 | 2026-01-15 | [Defending Large Language Models Against Jailbreak Attacks via In-Decoding Safety-Awareness Probing](http://arxiv.org/abs/2601.10543v1) | LLM | This paper proposes a method to leverage latent safety signals during LLM decoding to detect and prevent jailbreak attacks without significantly degrading utility or increasing over-refusal rates. |
 | 2026-01-12 | [Hiking in the Wild: A Scalable Perceptive Parkour Framework for Humanoids](http://arxiv.org/abs/2601.07718v1) | Reinforcement Learning | This paper introduces a scalable, end-to-end perceptive parkour framework for humanoids that enhances robustness in complex terrains through novel safety mechanisms and training strategies. |
